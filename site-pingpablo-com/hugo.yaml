@@ -1,0 +1,11 @@
+##
+# General site configuration
+baseURL: https://pingpablo.com/
+languageCode: en-us
+title: Pablo's web corner
+
+##
+# Modules & themes
+module:
+  imports:
+    - path: github.com/pablods90/hugo-theme-hello-friend
