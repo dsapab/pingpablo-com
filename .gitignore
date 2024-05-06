@@ -1,0 +1,28 @@
+###
+# Misc & code
+#
+**/*.zip
+**/*.localtest
+**/*.bkp
+/testing
+/Output/*
+**/node_modules
+
+# Standard files
+**/.vscode
+**/.DS_Store
+**/.ropeproject
+
+# Generated files by hugo
+**/public/
+**/resources/
+**/assets/jsconfig.json
+**/hugo_stats.json
+
+# Executable may be added to repository
+**/hugo.exe
+**/hugo.darwin
+**/hugo.linux
+
+# Temporary lock file while building
+**/.hugo_build.lock
