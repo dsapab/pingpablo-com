@@ -6,13 +6,6 @@ languageCode = "en-us"
 
 
 ##################################################################
-# Author
-[author]
-  name = "pingpablo.com"
-  location = "Earth"
-
-
-##################################################################
 # Modules & themes
 [module]
 [[module.imports]]
@@ -25,7 +18,7 @@ PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International International License." # This message is only used by the RSS template.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 # googleAnalytics = ""
 # disqusShortname = ""
 archetypeDir = "archetypes"
@@ -62,7 +55,7 @@ disableHugoGeneratorInject = false
 
 [params]
   [params.author]
-    name = "Pablo Andres"
+    name = "Jane Doe"
 
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -132,7 +125,7 @@ disableHugoGeneratorInject = false
   # If you want, you can easily override the default footer with your own content. 
   #
   [params.footer]
-    trademark = 2024
+    trademark = 2023
     rss = true
     copyright = true
     author = true
@@ -140,7 +133,7 @@ disableHugoGeneratorInject = false
     topText = []
     bottomText = [
       "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://github.com/pablods90\">Pablo</a>"
+      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
     ]
 
   # Colors for favicons
@@ -232,20 +225,20 @@ disableHugoGeneratorInject = false
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   #
   [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/pablods90"
+    name = "twitter"
+    url  = "https://x.com/pablods90"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:nobody@example.com"
 
   [[params.social]]
     name = "github"
     url  = "https://github.com/pablods90"
 
   [[params.social]]
-    name = "gitlab"
-    url  = "https://gitlab.com/pablods90"
-
-  [[params.social]]
-    name = "X"
-    url  = "https://x.com/pablods90"
+    name = "linkedin"
+    url  = "https://www.linkedin.com/pablods90"
 
   [[params.social]]
     name = "stackoverflow"
@@ -254,14 +247,14 @@ disableHugoGeneratorInject = false
 [languages]
   [languages.en]
     weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
     subtitle  = "Pablo here..."
 
-  [languages.es]
+  [languages.fr]
     weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
-  [languages.es.params]
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  [languages.fr.params]
     subtitle  = "Pablo here..."
 
 [menu]
