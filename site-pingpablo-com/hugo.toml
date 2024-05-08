@@ -1,7 +1,7 @@
 ##################################################################
 # Basic site configuration
 baseURL = "https://pingpablo.com"
-title   = "Pablo here..."
+title   = "$>"
 languageCode = "en-us"
 
 
@@ -61,25 +61,23 @@ disableHugoGeneratorInject = false
   series   = "series"
 
 [params]
-  [params.author]
-    name = "Pablo Andres"
 
-  dateform        = "Jan 2, 2006"
+  dateform        = "Jan 2, 2024"
   dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  dateformNum     = "2024-01-02"
+  dateformNumTime = "2024-01-02 16:04"
 
   # Metadata mostly used in document's head
   # 
-  description = "Nice theme for homepages and blogs"
-  keywords = ""
+  description = "Pablo's web corner!"
+  keywords = "containers, DevOps, IT, electronics"
   images = [""]
 
   ##################################################################
   # Home page config
 
   # Home subtitle of the index page.
-  homeSubtitle = "Pablo here..."
+  homeSubtitle = "Pablo heresss..."
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -92,41 +90,45 @@ disableHugoGeneratorInject = false
   #
   disableReadOtherPosts = false
 
+  # Theme color style
+  # OS theme is default when not provided, but you can force it to "light" or "dark"
+  defaultTheme = "light"
+
   # Enable theme toggle
   # 
   # This options enables the theme toggle for the theme. 
   # Per default, this option is off. 
   # The theme is respecting the prefers-color-scheme of the operating system. 
   # With this option on, the page user is able to set the scheme he wants. 
-  enableThemeToggle = false
+  enableThemeToggle = true
 
   # Sharing buttons
   #
   # There are a lot of buttons preconfigured. If you want to change them,
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
-  #
   enableSharingButtons = true
 
   # Global language menu
-  #
   # Enables the global language menu.
-  #
   enableGlobalLanguageMenu = true
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
-  #
   customCSS = []
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
-  #
   justifyContent = false  # Set "text-align: justify" to .post-content.
 
   # Integrate Plausible.io
   # plausibleDataDomain = 'test.com'
   # plausibleScriptSource = 'https://plausible.io/js/script.js'
+
+  ##
+  # Author
+  [params.author]
+    name = "Pablo Andres"
 
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
@@ -144,7 +146,6 @@ disableHugoGeneratorInject = false
     ]
 
   # Colors for favicons
-  #
   [params.favicon.color]
     mask = "#1b1c1d"
     msapplication = "#1b1c1d"
@@ -167,7 +168,6 @@ disableHugoGeneratorInject = false
   # Addon: Startpage portrait 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Uncomment this if you want a portrait on your start page
-  #
   # [params.portrait]
   #   path     = "/img/image.jpg"
   #   alt      = "Portrait"
@@ -249,20 +249,25 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+    url  = "https://stackoverflow.com/users/6849940/pablods90"
+
+  [[params.social]]
+    name = "lichess"
+    url  = "https://lichess.org/@/Dr_slimshady"
+
 
 [languages]
   [languages.en]
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
   [languages.en.params]
-    subtitle  = "Pablo here..."
+    subtitle  = "Pablo's web corner"
 
   [languages.es]
     weight    = 2
     copyright = '<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
   [languages.es.params]
-    subtitle  = "Pablo here..."
+    subtitle  = "El rincón de Pablo"
 
 [menu]
   [[menu.main]]
