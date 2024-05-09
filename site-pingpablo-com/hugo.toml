@@ -1,7 +1,7 @@
 ##################################################################
 # Basic site configuration
 baseURL = "https://pingpablo.com"
-title   = "$>"
+title   = "$>echo 'Hello friend!'"
 languageCode = "en-us"
 
 
@@ -124,6 +124,15 @@ disableHugoGeneratorInject = false
   # Integrate Plausible.io
   # plausibleDataDomain = 'test.com'
   # plausibleScriptSource = 'https://plausible.io/js/script.js'
+
+  # Animated typing string!
+  #
+  # This allows you to enable and add a changing string. This is ideal for replicating
+  # how a terminal/prompt would behave. A few facts to consider:
+  # 1. This feature uses the great JS library TypeIT (https://www.typeitjs.com/)
+  # 2. You can edit the layouts/index.html for changing the prompt behaviour. There are unlimited options!
+  addAnimatedTypingString = true
+  animadtedStrings = "I am Pablo! Let's be in touch!"
 
   ##
   # Author
