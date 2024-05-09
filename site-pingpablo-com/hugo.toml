@@ -77,7 +77,7 @@ disableHugoGeneratorInject = false
   # Home page config
 
   # Home subtitle of the index page.
-  homeSubtitle = "Pablo heresss..."
+  homeSubtitle = "Control can sometimes be an illusion ..."
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -92,7 +92,7 @@ disableHugoGeneratorInject = false
 
   # Theme color style
   # OS theme is default when not provided, but you can force it to "light" or "dark"
-  defaultTheme = "light"
+  #defaultTheme = "light"
 
   # Enable theme toggle
   # 
@@ -168,10 +168,10 @@ disableHugoGeneratorInject = false
   # Addon: Startpage portrait 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Uncomment this if you want a portrait on your start page
-  # [params.portrait]
-  #   path     = "/img/image.jpg"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
+  [params.portrait]
+    path     = "images/my-profile-picture.png"
+    alt      = "Portrait"
+    maxWidth = "200px"
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Commento
@@ -275,6 +275,6 @@ disableHugoGeneratorInject = false
     name       = "About"
     url        = "about/"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+    identifier = "blog"
+    name       = "Blog"
+    url        = "blog/"
