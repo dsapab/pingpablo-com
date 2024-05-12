@@ -1,7 +1,7 @@
 ##################################################################
 # Basic site configuration
 baseURL = "https://pingpablo.com"
-title   = "$>echo 'Hello friend!'"
+title   = "$>sh 'hello-friend.sh'"
 languageCode = "en-us"
 
 
@@ -111,7 +111,7 @@ disableHugoGeneratorInject = false
 
   # Global language menu
   # Enables the global language menu.
-  enableGlobalLanguageMenu = true
+  enableGlobalLanguageMenu = false
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -128,16 +128,21 @@ disableHugoGeneratorInject = false
   # Animated typing string!
   #
   # This allows you to enable and add a changing string. This is ideal for replicating
-  # how a terminal/prompt would behave. A few facts to consider:
+  # how a terminal/prompt would behave. The title can be also configured with typing style.
+  # 
+  # A few facts to consider:
   # 1. This feature uses the great JS library TypeIT (https://www.typeitjs.com/)
   # 2. You can edit the layouts/index.html for changing the prompt behaviour. There are unlimited options!
+  # 3. You can add multiple strings, separated by the '|' character. I selected this character as the
+  #    separator as it is not something you would regularly use in a string.
+  titleIsAnimated = true
   addAnimatedTypingString = true
-  animadtedStrings = "I am Pablo! Let's be in touch!"
+  animadtedStrings = "Hello there...|How are you today?|Let's get in touch!"
 
   ##
   # Author
   [params.author]
-    name = "Pablo Andres"
+    name = "Pablo"
 
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
@@ -161,8 +166,8 @@ disableHugoGeneratorInject = false
     theme = "#1b1c1d"
 
   [params.logo]
-    logoMark     = ">"
-    logoText     = "pablo@pingpablo.com:~$"
+    logoMark     = "#>"
+    logoText     = "pablo@pingpablo.com:~$ "
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -171,14 +176,14 @@ disableHugoGeneratorInject = false
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
     # Append the current url pathname to logoText 
-    # logoCursorPathname = true
+    logoCursorPathname = true
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Startpage portrait 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Uncomment this if you want a portrait on your start page
   [params.portrait]
-    path     = "images/my-profile-picture-2.jpg"
+    path     = "media/my-profile-picture-1.png"
     alt      = "Portrait"
     maxWidth = "200px"
 
