@@ -260,10 +260,6 @@ disableHugoGeneratorInject = false
     url  = "https://x.com/pablods90"
 
   [[params.social]]
-    name = "stackoverflow"
-    url  = "https://stackoverflow.com/users/6849940/pablods90"
-
-  [[params.social]]
     name = "lichess"
     url  = "https://lichess.org/@/Dr_slimshady"
 
