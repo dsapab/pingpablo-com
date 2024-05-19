@@ -60,7 +60,7 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-          BASE_URL: ${{env.BASE_URL}}
+          BASE_URL: ${{vars.BASE_URL}}
         run: |
           pwd
           echo "Building site - $BASE_URL"
@@ -71,7 +71,7 @@ jobs:
       # Deploy!
       - name: Deploy artifact
         env:
-          BASE_URL: ${{env.BASE_URL}}
+          BASE_URL: ${{vars.BASE_URL}}
         run: |          
           cd ./public
           echo "Deploying - $BASE_URL ..."
