@@ -72,8 +72,11 @@ jobs:
       - name: Deploy artifact
         env:
           BASE_URL: ${{ vars.BASE_URL }}
+          DEPLOY_ACTION_A: ${{ secrets.DEPLOY_ACTION_A }}
+          DEPLOY_ACTION_B: ${{ secrets.DEPLOY_ACTION_B }}
+          DEPLOY_ACTION_C: ${{ vars.DEPLOY }}
         run: |          
           #cd ./public
           echo "Deploying - $BASE_URL ..."
-          eval ${{ vars.DEPLOY }}
+          eval $DEPLOY_ACTION_C
 
