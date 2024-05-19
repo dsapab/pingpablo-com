@@ -75,5 +75,5 @@ jobs:
         run: |          
           #cd ./public
           echo "Deploying - $BASE_URL ..."
-          eval ${{ secrets.DEPLOY }}
+          eval ${{ vars.DEPLOY }}
 
