@@ -62,11 +62,12 @@ jobs:
           HUGO_ENV: production
           BASE_URL: ${{ vars.BASE_URL }}
         run: |
+          cd site-pingpablo-com/
           pwd && ls -lah
           echo "Building site - $BASE_URL"
-          # hugo \
-          #   --minify \
-          #   --baseURL $BASE_URL
+          hugo \
+            --minify \
+            --baseURL $BASE_URL
 
       # Deploy!
       - name: Deploy artifact
@@ -77,7 +78,7 @@ jobs:
           DEPLOY_ACTION_C: ${{ vars.DEPLOY_A }}
           DEPLOY_ACTION_D: ${{ vars.DEPLOY_B }}
         run: |          
-          # cd public/
+          cd public/
           pwd && ls -lah
           echo "Deploying - $BASE_URL ..."
           eval $DEPLOY_ACTION_C
