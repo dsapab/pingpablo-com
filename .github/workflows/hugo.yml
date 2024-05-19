@@ -34,7 +34,7 @@ jobs:
       # Required dependencies for the workflow
       - name: Pre-dependencies
         run: |
-          apt-get update && apt-get install jq
+          sudo apt-get update && sudo apt-get -y install jq
 
       # Install the latest version for Hugo CLI
       - name: Install Hugo CLI
