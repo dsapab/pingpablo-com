@@ -1,0 +1,76 @@
+name: Deploy Hugo
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["dev"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "hugo"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.126.1
+    steps:
+      # Required dependencies for the workflow
+      - name: Pre-dependencies
+        run: |
+          apt-get update && apt-get install jq
+
+      # Install the latest version for Hugo CLI
+      - name: Install Hugo CLI
+        run: |          
+          curl -s --silent -N "https://api.github.com/repos/gohugoio/hugo/releases/latest" | jq '.assets[] | select(.name | contains("hugo_extended_") and contains("_linux-amd64.deb"))' | jq .browser_download_url | xargs wget -qO- > hugo.deb
+          curl -s --silent -N "https://api.github.com/repos/gohugoio/hugo/releases/latest" | jq '.assets[] | select(.name | contains("_checksums.txt"))' | jq .browser_download_url | xargs wget -qO- > checksums.txt
+          if ! grep $(sha256sum hugo.deb | awk '{print $1}') checksums.txt
+          then
+            echo "Checksum does not match! Aborting..."
+            exit 1
+          fi
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      
+      # Checkout sub-modules (in case present)
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      # Build site for production
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          echo "Building site - $BASE_URL"
+          hugo \
+            --minify \
+            --baseURL $BASE_URL"
+
+      # Deploy!
+      - name: Deploy artifact
+        run: |          
+          cd ./public
+          echo "Deploying..."
+          # Deploy
+
