@@ -78,7 +78,7 @@ jobs:
           DEPLOY_ACTION_C: ${{ vars.DEPLOY_A }}
           DEPLOY_ACTION_D: ${{ vars.DEPLOY_B }}
         run: |          
-          cd public/
+          cd site-pingpablo-com/public/
           pwd && ls -lah
           echo "Deploying - $BASE_URL ..."
           eval $DEPLOY_ACTION_C
