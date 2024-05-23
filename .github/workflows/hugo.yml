@@ -65,14 +65,11 @@ jobs:
       - name: Deploy artifact
         env:
           BASE_URL: ${{ vars.BASE_URL }}
-          DEPLOY_ACTION_A: ${{ secrets.DEPLOY_ACTION_A }}
-          DEPLOY_ACTION_B: ${{ secrets.DEPLOY_ACTION_B }}
-          DEPLOY_ACTION_C: ${{ vars.DEPLOY_A }}
-          DEPLOY_ACTION_D: ${{ vars.DEPLOY_B }}
+          DEPLOY_ACTION: ${{ vars.DEPLOY_ACTION }}
+          DEPLOY_DATA_A: ${{ secrets.DEPLOY_DATA_A }}
         run: |          
           cd site-pingpablo-com/public/
           pwd && ls -lah
           echo "Deploying - $BASE_URL ..."
-          eval $DEPLOY_ACTION_C
-          eval $DEPLOY_ACTION_D
+          eval $DEPLOY_ACTION
 
