@@ -94,6 +94,7 @@ jobs:
             export DEPLOY_DATA="$DEPLOY_DATA_D"
           fi
           cd site-pingpablo-com/public/
+          date +%s > .deploy
           pwd && ls -lah
           echo "Deploying..."
           eval $DEPLOY
