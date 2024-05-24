@@ -68,19 +68,22 @@ jobs:
 
       # Deploy!
       - name: Deploy artifact
-        #if: github.ref == 'refs/heads/main'
         env:
+          BRANCH: ${{github.ref}}
           BASE_URL: ${{ vars.BASE_URL_A }}
           DEPLOY_ACTION: ${{ vars.DEPLOY_ACTION }}
-          DEPLOY_DATA: ${{ secrets.DEPLOY_DATA_C }}
+          DEPLOY_DATA_A: ${{ secrets.DEPLOY_DATA_A }}
+          DEPLOY_DATA_B: ${{ secrets.DEPLOY_DATA_B }}
         run: |
-          if [ github.ref == 'refs/heads/main']
+          if [ $BRANCH == 'refs/heads/main']
           then
             echo 'Deploying [main]'
+            DEPLOY_DATA = $DEPLOY_DATA_A
           else
             echo 'Deploying [dev]'
+            DEPLOY_DATA = $DEPLOY_DATA_B
           fi
           cd site-pingpablo-com/public/
           pwd && ls -lah
-          echo "Deploying - $BASE_URL ... [MAIN]"
-          eval $DEPLOY_ACTION
+          echo "Deploying - $BASE_URL"
+          eval $DEPLOY
