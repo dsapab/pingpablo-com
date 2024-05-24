@@ -78,10 +78,10 @@ jobs:
           if [ $BRANCH == 'refs/heads/main' ];
           then
             echo 'Deploying [main]'
-            export DEPLOY_DATA = "$DEPLOY_DATA_A"
+            export DEPLOY_DATA="$DEPLOY_DATA_A"
           else
             echo 'Deploying [dev]'
-            export DEPLOY_DATA = "$DEPLOY_DATA_B"
+            export DEPLOY_DATA="$DEPLOY_DATA_B"
           fi
           cd site-pingpablo-com/public/
           pwd && ls -lah
