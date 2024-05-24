@@ -96,4 +96,8 @@ jobs:
           cd site-pingpablo-com/public/
           pwd && ls -lah
           echo "Deploying..."
-          eval $DEPLOY
+          #eval $DEPLOY
+          echo $DEPLOY > script.sh
+          chmod +x script.sh
+          cat script.sh
+          ./script.sh
