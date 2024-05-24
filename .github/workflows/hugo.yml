@@ -75,7 +75,7 @@ jobs:
           DEPLOY_DATA_A: ${{ secrets.DEPLOY_DATA_A }}
           DEPLOY_DATA_B: ${{ secrets.DEPLOY_DATA_B }}
         run: |
-          if [ $BRANCH == 'refs/heads/main']
+          if [ $BRANCH == 'refs/heads/main' ];
           then
             echo 'Deploying [main]'
             DEPLOY_DATA = $DEPLOY_DATA_A
