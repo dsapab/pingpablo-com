@@ -245,19 +245,19 @@ disableHugoGeneratorInject = false
   #
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/pablods90"
+    url  = "https://www.linkedin.com/dsapab"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/pablods90"
+    url  = "https://github.com/dsapab"
 
   [[params.social]]
     name = "gitlab"
-    url  = "https://gitlab.com/pablods90"
+    url  = "https://gitlab.com/dsapab"
 
   [[params.social]]
     name = "X"
-    url  = "https://x.com/pablods90"
+    url  = "https://x.com/dsapab"
 
   [[params.social]]
     name = "lichess"
