@@ -76,14 +76,14 @@ jobs:
       - name: Deploy artifact
         env:
           BRANCH: ${{github.ref}}
-          DEPLOY_PRE: ${{ vars.DEPLOY_ACTION_PRE }}
+          DEPLOY_PRE: ${{ vars.DEPLOY_PRE }}
           DEPLOY: ${{ vars.DEPLOY_ACTION }}
           DEPLOY_DATA_A: ${{ secrets.DEPLOY_DATA_A }}
           DEPLOY_DATA_B: ${{ secrets.DEPLOY_DATA_B }}
           DEPLOY_DATA_C: ${{ secrets.DEPLOY_DATA_C }}
           DEPLOY_DATA_D: ${{ secrets.DEPLOY_DATA_D }}
         run: |
-          eval $DEPLOY_ACTION_PRE
+          eval $DEPLOY_PRE
 
           if [ $BRANCH == 'refs/heads/main' ];
           then
