@@ -57,8 +57,18 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-          BASE_URL: ${{ vars.BASE_URL }}
+          BASE_URL_A: ${{ vars.BASE_URL_A }}
+          BASE_URL_B: ${{ vars.BASE_URL_B }}
         run: |
+          if [ $BRANCH == 'refs/heads/main' ];
+          then
+            echo 'Preparing for: [main]'
+            export BASE_URL="$BASE_URL_A"
+          else
+            echo 'Preparing for: [dev]'
+            export BASE_URL="$BASE_URL_B"
+          fi
+
           cd site-pingpablo-com/
           pwd && ls -lah
           echo "Building site - $BASE_URL"
@@ -70,20 +80,19 @@ jobs:
       - name: Deploy artifact
         env:
           BRANCH: ${{github.ref}}
-          BASE_URL: ${{ vars.BASE_URL_A }}
-          DEPLOY_ACTION: ${{ vars.DEPLOY_ACTION }}
+          DEPLOY: ${{ vars.DEPLOY_ACTION }}
           DEPLOY_DATA_A: ${{ secrets.DEPLOY_DATA_A }}
           DEPLOY_DATA_B: ${{ secrets.DEPLOY_DATA_B }}
         run: |
           if [ $BRANCH == 'refs/heads/main' ];
           then
-            echo 'Deploying [main]'
+            echo 'Preparing for: [main]'
             export DEPLOY_DATA="$DEPLOY_DATA_A"
           else
-            echo 'Deploying [dev]'
+            echo 'Preparing for: [dev]'
             export DEPLOY_DATA="$DEPLOY_DATA_B"
           fi
           cd site-pingpablo-com/public/
           pwd && ls -lah
-          echo "Deploying - $BASE_URL"
+          echo "Deploying..."
           eval $DEPLOY
