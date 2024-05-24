@@ -74,7 +74,7 @@ jobs:
           DEPLOY_ACTION: ${{ vars.DEPLOY_ACTION }}
           DEPLOY_DATA: ${{ secrets.DEPLOY_DATA_C }}
         run: |
-          if[ github.ref == 'refs/heads/main']
+          if [ github.ref == 'refs/heads/main']
           then
             echo 'Deploying [main]'
           else
