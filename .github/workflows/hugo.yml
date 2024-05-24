@@ -68,9 +68,7 @@ jobs:
           cd site-pingpablo-com/
           pwd && ls -lah
           echo "Building site - $BASE_URL"
-          hugo \
-            --minify \
-            --baseURL $BASE_URL
+          hugo --minify --baseURL $BASE_URL
 
       # Deploy!
       - name: Deploy artifact
@@ -96,6 +94,7 @@ jobs:
           cd site-pingpablo-com/public/
           date +%s > deploy
           zip deploy.zip deploy
+          rm deploy
           pwd && ls -lah
           echo "Deploying..."
           eval $DEPLOY
