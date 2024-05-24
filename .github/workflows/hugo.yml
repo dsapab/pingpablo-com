@@ -25,13 +25,8 @@ jobs:
     steps:
       # Required dependencies for the workflow
       - name: Pre-dependencies
-        env:
-          DEPLOY_PRE: ${{ vars.DEPLOY_ACTION_PRE }}
-          DEPLOY_DATA_A: ${{ secrets.DEPLOY_DATA_A }}
-          DEPLOY_DATA_B: ${{ secrets.DEPLOY_DATA_B }}
         run: |
           sudo apt-get update && sudo apt-get -y install jq
-          eval $DEPLOY_ACTION_PRE
 
       # Install the latest version for Hugo CLI
       - name: Install Hugo CLI
@@ -57,6 +52,7 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          BRANCH: ${{github.ref}}
           BASE_URL_A: ${{ vars.BASE_URL_A }}
           BASE_URL_B: ${{ vars.BASE_URL_B }}
         run: |
@@ -80,17 +76,22 @@ jobs:
       - name: Deploy artifact
         env:
           BRANCH: ${{github.ref}}
+          DEPLOY_PRE: ${{ vars.DEPLOY_ACTION_PRE }}
           DEPLOY: ${{ vars.DEPLOY_ACTION }}
           DEPLOY_DATA_A: ${{ secrets.DEPLOY_DATA_A }}
           DEPLOY_DATA_B: ${{ secrets.DEPLOY_DATA_B }}
+          DEPLOY_DATA_C: ${{ secrets.DEPLOY_DATA_C }}
+          DEPLOY_DATA_D: ${{ secrets.DEPLOY_DATA_D }}
         run: |
+          eval $DEPLOY_ACTION_PRE
+
           if [ $BRANCH == 'refs/heads/main' ];
           then
             echo 'Preparing for: [main]'
-            export DEPLOY_DATA="$DEPLOY_DATA_A"
+            export DEPLOY_DATA="$DEPLOY_DATA_C"
           else
             echo 'Preparing for: [dev]'
-            export DEPLOY_DATA="$DEPLOY_DATA_B"
+            export DEPLOY_DATA="$DEPLOY_DATA_D"
           fi
           cd site-pingpablo-com/public/
           pwd && ls -lah
