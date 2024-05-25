@@ -68,7 +68,8 @@ jobs:
           cd site-pingpablo-com/
           pwd && ls -lah
           echo "Building site - $BASE_URL"
-          hugo --minify --baseURL $BASE_URL
+          #hugo --minify --baseURL $BASE_URL
+          hugo --baseURL $BASE_URL
 
       # Deploy!
       - name: Deploy artifact
