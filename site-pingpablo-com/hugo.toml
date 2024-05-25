@@ -16,7 +16,7 @@ languageCode = "en-us"
 # Modules & themes
 [module]
 [[module.imports]]
-  path = "github.com/pablods90/hugo-theme-hello-friend-xt"
+  path = "github.com/dsapab/hugo-theme-hello-friend-xt"
 
 
 ##################################################################
@@ -35,7 +35,7 @@ buildDrafts  = false
 buildFuture  = false
 buildExpired = false
 canonifyURLs = false
-uglyURLs     = false
+uglyURLs     = true
 enableRobotsTXT = true
 enableGitInfo   = false
 enableEmoji     = true
@@ -155,7 +155,7 @@ disableHugoGeneratorInject = false
     topText = []
     bottomText = [
       "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://github.com/pablods90\">Pablo</a>"
+      "Made with &#10084; by <a href=\"https://github.com/dsapab\">Pablo</a>"
     ]
 
   # Colors for favicons
