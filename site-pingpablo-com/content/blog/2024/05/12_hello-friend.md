@@ -18,7 +18,7 @@ aliases:
 >       example, file manipulation tools, shells, compilers, web
 >       browsers, file and image viewers and editors, and so on.
 
-![Animated robot in a Baroque poets outfit](/media/blog/2024-05-12_hello-friend/robot-poet.jpeg)
+![Animated robot in a Baroque poets outfit](/media/blog/2024/05/12_hello-friend/robot-poet.jpeg)
 
 ## What is this about?
 
