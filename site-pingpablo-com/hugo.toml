@@ -1,6 +1,6 @@
 ##################################################################
 # Basic site configuration
-baseURL = "https://pingpablo.com"
+# baseURL = "https://pingpablo.com"
 title   = "$>sh 'hello-friend.sh'"
 languageCode = "en-us"
 
@@ -270,12 +270,6 @@ disableHugoGeneratorInject = false
     copyright = '<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
   [languages.en.params]
     subtitle  = "Pablo's web corner"
-
-  [languages.es]
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
-  [languages.es.params]
-    subtitle  = "El rincón de Pablo"
 
 [menu]
   [[menu.main]]
