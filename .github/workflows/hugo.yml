@@ -80,6 +80,7 @@ jobs:
           DEPLOY_DATA_B: ${{ secrets.DEPLOY_DATA_B }}
           DEPLOY_DATA_C: ${{ secrets.DEPLOY_DATA_C }}
           DEPLOY_DATA_D: ${{ secrets.DEPLOY_DATA_D }}
+          DEPLOY_DATA_E: ${{ secrets.DEPLOY_DATA_E }}
         run: |
           eval $DEPLOY_PRE
 
