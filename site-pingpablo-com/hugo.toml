@@ -136,7 +136,7 @@ disableHugoGeneratorInject = false
   #    separator as it is not something you would regularly use in a string.
   titleIsAnimated = true
   addAnimatedTypingString = true
-  animadtedStrings = "Hello there...|How are you today?|Let's get in touch!"
+  animadtedStrings = "Hello there...|Let's get in touch!"
 
   ##
   # Author
@@ -166,7 +166,7 @@ disableHugoGeneratorInject = false
 
   [params.logo]
     logoMark     = "#>"
-    logoText     = "pablo@pingpablo.com:~$ "
+    logoText     = "p@local:~$ "
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
