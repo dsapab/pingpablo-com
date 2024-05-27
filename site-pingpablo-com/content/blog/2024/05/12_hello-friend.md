@@ -22,5 +22,5 @@ aliases:
 
 ## What is this about?
 
-Thanks for reading, reader! This is my personal site, where you will find content about IT, Linux, Info Sec, Networking and Cloud computing. I will try to share what I have learned in my journey with servers.
+Thanks for reading, reader! This is my personal site, where you will find content about IT, Linux, Info Sec, Networking and Cloud computing. I will try to share what I have learned in my journey, living around servers.
 
