@@ -12,6 +12,11 @@ type:
 weight: 10
 aliases:
 - /blog/hello-friend
+categories:
+- Opinion
+- Announcements
+tags:
+- snippets
 ---
 
 > Section 1 of the manual describes user commands and tools, for
