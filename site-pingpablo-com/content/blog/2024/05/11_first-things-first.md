@@ -25,7 +25,7 @@ tags:
 - how-to
 ---
 
->This post will be brief. As you may have guessed already, I am not a web developer and I am far from having a refined test for web design. Nevertheless, I try my best and I hope it does not look that bad!
+>This post will be brief. As you may have guessed already, I am not a web developer and I am far from having a refined taste for web design. Nevertheless, I try my best and I hope it does not look that bad!
 
 
 How to properly write in [markdown](https://en.wikipedia.org/wiki/Markdown)? 
