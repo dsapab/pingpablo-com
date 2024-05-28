@@ -2,8 +2,9 @@
 author:
   name: "Pablo"
 date: 2024-05-12
-linktitle: Hello friend
-title: Hello friend
+lastmod: 2024-05-28T00:40:00
+linktitle: Hello friend!
+title: Hello friend!
 cover: /media/blog/2024/05/12_hello-friend/robot-poet.jpeg
 coverAlt: Animated robot in a Baroque poets outfit
 coverCaption: Animated robot in a Baroque poets outfit
