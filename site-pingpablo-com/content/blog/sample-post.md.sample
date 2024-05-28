@@ -1,0 +1,37 @@
+---
+author:
+  name: "Pablo"
+date: 2024-05-12
+linktitle: Hello friend
+title: Hello friend
+cover: /media/blog/2024/05/12_hello-friend/robot-poet.jpeg
+coverAlt: Animated robot in a Baroque poets outfit
+coverCaption: Animated robot in a Baroque poets outfit
+type:
+- blog
+- blogs
+weight: 10
+aliases:
+- /blog/hello-friend
+categories:
+- Opinion
+- Announcements
+tags:
+- snippets
+---
+
+> Section 1 of the manual describes user commands and tools, for
+>       example, file manipulation tools, shells, compilers, web
+>       browsers, file and image viewers and editors, and so on.
+
+## Important intro
+
+Important intro text.
+
+
+## Some important title
+
+Some important text!
+
+P.
+
