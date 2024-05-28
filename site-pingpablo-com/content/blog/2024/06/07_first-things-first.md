@@ -4,8 +4,9 @@ author:
 date: 2025-05-27
 linktitle: First things first!
 title: First things first!
-#cover:
-#  image: /robot-poet.jpeg
+cover: /media/blog/06/07_first-things-first/js-code.jpeg
+coverAlt: JS Code
+coverCaption: JS Code
 type:
 - blog
 - blogs
