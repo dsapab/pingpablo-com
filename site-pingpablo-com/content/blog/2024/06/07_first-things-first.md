@@ -1,7 +1,7 @@
 ---
 author:
   name: "Pablo"
-date: 2024-05-27
+date: 2025-05-27
 linktitle: First things first!
 title: First things first!
 #cover:

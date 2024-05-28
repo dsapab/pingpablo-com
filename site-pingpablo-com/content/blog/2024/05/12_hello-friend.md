@@ -4,8 +4,9 @@ author:
 date: 2024-05-12
 linktitle: Hello friend
 title: Hello friend
-#cover:
-#  image: /robot-poet.jpeg
+cover: /media/blog/2024/05/12_hello-friend/robot-poet.jpeg
+coverAlt: Animated robot in a Baroque poets outfit
+coverCaption: Animated robot in a Baroque poets outfit
 type:
 - blog
 - blogs
@@ -22,8 +23,6 @@ tags:
 > Section 1 of the manual describes user commands and tools, for
 >       example, file manipulation tools, shells, compilers, web
 >       browsers, file and image viewers and editors, and so on.
-
-![Animated robot in a Baroque poets outfit](/media/blog/2024/05/12_hello-friend/robot-poet.jpeg)
 
 ## Hello!
 
