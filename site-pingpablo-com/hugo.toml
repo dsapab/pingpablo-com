@@ -200,6 +200,26 @@ enableGitInfo   = true
     alt      = "Portrait"
     maxWidth = "200px"
 
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: giscus.es
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # giscus.app is a lightweight comments widget built on GitHub issues.
+  # See https://giscus.app for documentation
+  # Uncomment this to enable Giscus.
+  [params.giscus]
+    repo              = "dsapab/pingpablo-com-comments"
+    repoID            = "R_kgDOMCYR5g"
+    category          = "Forum"
+    categoryID        = "DIC_kwDOMCYR5s4Cfspw"
+    mapping           = "url"
+    reactionsEnabled  = "1"
+    emitMetadata      = "0"
+    inputPosition     = "top"
+    theme             = "preferred_color_scheme"
+    lang              = "en"
+    loading           = "lazy"
+
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Commento
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
