@@ -1,7 +1,7 @@
 ---
 author:
   name: "Pablo"
-date: 2024-05-11
+date: 2024-05-11T00:00:00-00:00
 linktitle: First things first!
 title: First things first!
 cover: /media/blog/2024/05/11_first-things-first/js-code.jpeg

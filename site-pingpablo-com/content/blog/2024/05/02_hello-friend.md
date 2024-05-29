@@ -1,8 +1,7 @@
 ---
 author:
   name: "Pablo"
-date: 2024-05-02
-lastmod: 2024-05-28T00:40:00
+date: 2024-05-02T00:00:00-00:00
 linktitle: Hello friend!
 title: Hello friend!
 cover: /media/blog/2024/05/02_hello-friend/robot-poet.jpeg
