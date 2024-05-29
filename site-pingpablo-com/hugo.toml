@@ -6,6 +6,33 @@ languageCode = "en-us"
 
 
 ##################################################################
+# Advanced site configuration
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International International License." # This message is only used by the RSS template.
+archetypeDir    = "archetypes"
+contentDir      = "content"
+dataDir         = "data"
+layoutDir       = "layouts"
+publishDir      = "public"
+buildDrafts     = false
+buildFuture     = false
+buildExpired    = false
+canonifyURLs    = false
+uglyURLs        = false
+enableRobotsTXT = true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS      = false
+disableSitemap  = false
+disable404      = false
+disableHugoGeneratorInject = false
+enableGitInfo   = true
+
+
+##################################################################
 # Author
 [author]
   name = "pingpablo.com"
@@ -20,33 +47,6 @@ languageCode = "en-us"
 
 
 ##################################################################
-# Advanced site configuration
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
-paginate  = 10
-rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International International License." # This message is only used by the RSS template.
-archetypeDir = "archetypes"
-contentDir   = "content"
-dataDir      = "data"
-layoutDir    = "layouts"
-publishDir   = "public"
-buildDrafts  = false
-buildFuture  = false
-buildExpired = false
-canonifyURLs = false
-uglyURLs     = true
-enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
-enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
-lastModDisplay = "Updated on: "
-
-##################################################################
 # Permalinks & Taxonomy
 [permalinks]
   posts = "/posts/:year/:month/:title/"
@@ -59,12 +59,26 @@ lastModDisplay = "Updated on: "
   category = "categories"
   series   = "series"
 
+
+##################################################################
+# Permalinks & Taxonomy
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":git"]
+
+
+##################################################################
+# Main params
 [params]
 
   dateform        = "Jan 2, 2024"
   dateformShort   = "Jan 2"
   dateformNum     = "2024-01-02"
   dateformNumTime = "2024-01-02 16:04"
+
+  # Display last modified date
+  lastModDisplay  = "Updated: "
+  showReadingTime = true
 
   # Metadata mostly used in document's head
   # 
@@ -83,7 +97,7 @@ lastModDisplay = "Updated on: "
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
-  # gitUrl = ""
+  gitUrl = "https://github.com/dsapab/pingpablo-com/commit/"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
