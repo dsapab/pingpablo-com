@@ -28,11 +28,6 @@
                     >- {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }} | </span
                   >
                 {{ end }}
-                {{ if $.Site.Params.LastModDisplay }}
-                  <span class="post-info"
-                     > {{ partial "lastmod.html" . }}</span
-                  >
-                {{ end }}
             </div>
             {{ if .Params.Cover }}
                 <figure class="post-cover">
