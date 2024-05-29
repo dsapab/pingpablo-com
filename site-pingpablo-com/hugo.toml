@@ -61,7 +61,7 @@ enableGitInfo   = true
 
 
 ##################################################################
-# Permalinks & Taxonomy
+# Front matter config - https://gohugo.io/content-management/front-matter/ 
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]
   lastmod = ["lastmod", ":git"]
