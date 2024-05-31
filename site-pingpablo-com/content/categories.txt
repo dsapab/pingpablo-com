@@ -1,0 +1,5 @@
+00. I keep a record of the used taxonomies here - (sort with: sort -o taxonomies.txt taxonomies.txt)
+- Announcements
+- Opinion
+- Tooling
+- Writing
