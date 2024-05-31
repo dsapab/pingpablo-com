@@ -210,9 +210,9 @@ enableGitInfo   = true
   [params.giscus]
     repo              = "dsapab/pingpablo-com-comments"
     repoID            = "R_kgDOMCYR5g"
-    category          = "Forum"
+    category          = "General"
     categoryID        = "DIC_kwDOMCYR5s4Cfspw"
-    mapping           = "path"
+    mapping           = "pathname"
     reactionsEnabled  = "1"
     emitMetadata      = "0"
     inputPosition     = "top"
