@@ -1,13 +1,10 @@
 # pingpablo-com
 
-![Animated robot in a Baroque poets outfit, writing with a quill, in a classic studyl](./misc/robot-poet.jpeg)
+![Animated robot in a Baroque poets outfit in a classic study](./misc/robot-poet.jpeg)
 
-*WIP - Site under construction*
+## pingpablo.com
 
-
-## Index
-
-*WIP - Soon*
+Welcome to my personal site, where you will find content about IT, Linux, Info Sec, Networking and Cloud computing. I will try to share what I have learned during my journey, playing around with computers. I may not post very often, but I want to crate a space for myself and for anyone that finds tech stuff content useful and enjoyable. I will document my projects and the tools that I daily use, sharing my view on how and why I use them.
 
 ## Contributing
 
