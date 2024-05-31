@@ -1,0 +1,60 @@
+{{ define "body" }}
+    <body class="{{ if .Site.Params.backgroundImage }} background-image" style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
+{{ end }}
+
+{{ define "main" }}
+    <main aria-role="main">
+        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+        <div>
+            {{ if .Site.Params.Portrait.Path }}
+               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+            {{ end }}
+
+            {{ if .Site.Params.titleIsAnimated }}
+                <h1 align=center class="animatedTitle"></h1>
+                <script>
+                    new TypeIt(".animatedTitle", {
+                    strings: "{{ .Site.Title }}".split('|'),
+                    breakLines: true,
+                    lifeLike: true,
+                    cursor: false,
+                    cursorChar: '|',
+                    cursorSpeed: 1000,
+                    loop: false,
+                    speed: 68,
+                    }).go();
+                </script>
+            {{ else }}
+                <h1>{{ .Site.Title }} </h1>
+            {{ end }}
+
+            {{ if .Site.Params.addAnimatedTypingString }}
+                <h1 align=center class="animatedStrings"></h1>
+                <script>
+                    new TypeIt(".animatedStrings", {
+                      strings: "{{ .Site.Params.animadtedStrings }}".split('|'),
+                      breakLines: false,
+                      lifeLike: true,
+                      cursor: true,
+                      cursorChar: '|',
+                      cursorSpeed: 1000,
+                      loop: true,
+                      speed: 158,
+                      deleteSpeed: null,
+                      nextStringDelay: 4000,
+                      loopDelay: 5000,
+                      startDelay: 3000
+                    }).go();
+                </script>
+            {{ end }}
+
+            {{ partial "subtitle.html" . }}
+
+            {{- with .Site.Params.social }}
+                <div>
+                    {{ partial "social-icons.html" . }}
+                </div>
+            {{- end }}
+        </div>
+    </main>
+{{ end }}

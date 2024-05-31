@@ -1,0 +1,321 @@
+##################################################################
+# Basic site configuration
+# baseURL = "https://pingpablo.com"
+title   = "$>sh 'hello-friend.sh'"
+languageCode = "en-us"
+
+
+##################################################################
+# Advanced site configuration
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International International License." # This message is only used by the RSS template.
+archetypeDir    = "archetypes"
+contentDir      = "content"
+dataDir         = "data"
+layoutDir       = "layouts"
+publishDir      = "public"
+buildDrafts     = false
+buildFuture     = false
+buildExpired    = false
+canonifyURLs    = false
+uglyURLs        = false
+enableRobotsTXT = true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS      = false
+disableSitemap  = false
+disable404      = false
+disableHugoGeneratorInject = false
+enableGitInfo   = true
+
+
+##################################################################
+# Author
+[author]
+  name = "pingpablo.com"
+  location = "Earth"
+
+
+##################################################################
+# Modules & themes
+[module]
+[[module.imports]]
+  path = "github.com/dsapab/hugo-theme-hello-friend-xt"
+
+
+##################################################################
+# Permalinks & Taxonomy
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+
+##################################################################
+# Front matter config - https://gohugo.io/content-management/front-matter/ 
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":git"]
+
+
+##################################################################
+# Main params
+[params]
+
+  dateform        = "Jan 2, 2024"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2024-01-02"
+  dateformNumTime = "2024-01-02 16:04"
+
+  # Display last modified date
+  lastModDisplay  = "Updated: "
+  showReadingTime = true
+
+  # Metadata mostly used in document's head
+  # 
+  description = "Pablo's web corner!"
+  keywords = "containers, DevOps, IT, electronics"
+  images = [""]
+
+  ##################################################################
+  # Home page config
+
+  # Home subtitle of the index page.
+  homeSubtitle = "Control can sometimes be an illusion ..."
+
+  # Set a background for the homepage
+  # backgroundImage = "assets/images/background.jpg"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
+  gitUrl = "https://github.com/dsapab/pingpablo-com/commit/"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
+  disableReadOtherPosts = false
+
+  # Theme color style
+  # OS theme is default when not provided, but you can force it to "light" or "dark"
+  #defaultTheme = "light"
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating system. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = true
+
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  enableSharingButtons = true
+
+  # Global language menu
+  # Enables the global language menu.
+  enableGlobalLanguageMenu = false
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Integrate Plausible.io
+  # plausibleDataDomain = 'test.com'
+  # plausibleScriptSource = 'https://plausible.io/js/script.js'
+
+  # Animated typing string!
+  #
+  # This allows you to enable and add a changing string. This is ideal for replicating
+  # how a terminal/prompt would behave. The title can be also configured with typing style.
+  # 
+  # A few facts to consider:
+  # 1. This feature uses the great JS library TypeIT (https://www.typeitjs.com/)
+  # 2. You can edit the layouts/index.html for changing the prompt behaviour. There are unlimited options!
+  # 3. You can add multiple strings, separated by the '|' character. I selected this character as the
+  #    separator as it is not something you would regularly use in a string.
+  titleIsAnimated = true
+  addAnimatedTypingString = true
+  animadtedStrings = "Hello there...|Let's get in touch!"
+
+  ##
+  # Author
+  [params.author]
+    name = "Pablo"
+
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  [params.footer]
+    trademark = 2024
+    rss = true
+    copyright = true
+    author = true
+
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "Made with &#10084; by <a href=\"https://github.com/dsapab\">Pablo</a>"
+    ]
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = "#>"
+    logoText     = "p@local:~$ "
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+    # Append the current url pathname to logoText 
+    logoCursorPathname = true
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Startpage portrait 
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # Uncomment this if you want a portrait on your start page
+  [params.portrait]
+    path     = "media/my-profile-picture-1.png"
+    alt      = "Portrait"
+    maxWidth = "200px"
+
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: giscus.es
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # giscus.app is a lightweight comments widget built on GitHub issues.
+  # See https://giscus.app for documentation
+  # Uncomment this to enable Giscus.
+  [params.giscus]
+    repo              = "dsapab/pingpablo-com-comments"
+    repoID            = "R_kgDOMCYR5g"
+    category          = "Forum"
+    categoryID        = "DIC_kwDOMCYR5s4Cfspw"
+    mapping           = "url"
+    reactionsEnabled  = "1"
+    emitMetadata      = "0"
+    inputPosition     = "top"
+    theme             = "preferred_color_scheme"
+    lang              = "en"
+    loading           = "lazy"
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Commento
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # Commento is more than just a comments widget you can embed — 
+  # it’s a return to the roots of the internet. 
+  # An internet without the tracking and invasions of privacy. 
+  # An internet that is simple and lightweight. 
+  # An internet that is focused on interesting discussions, not ads. 
+  # A better internet.
+  # Uncomment this to enable Commento.
+  #
+  # [params.commento]
+  #   url = ""
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Utteranc.es
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # Utteranc.es is a lightweight comments widget built on GitHub issues.
+  # See https://utteranc.es/ for documentation
+  # Uncomment this to enable Utteranc.es.
+  #
+  # [params.utterances]
+  #   Your GitHub repository
+  #
+  #   repository = ""
+  #
+  #   label used for GitHub issues
+  #
+  #   label      = ""
+  # 
+  #   Blog Post <-> Issue mapping. This parameter is optional. Possible values are:
+  #      - pathname
+  #      - url
+  #      - title
+  #      - og:title
+  #      - issue number
+  #      - specific term
+  #
+  #   issueTerm  = ""
+  #
+  #   Theme used: possible values are:
+  #      - github-light
+  #      - github-dark
+  #      - preferred-color-scheme
+  #      - github-dark-orange
+  #      - icy-dark
+  #      - dark-blue
+  #      - photon-dark
+  #      - boxy-light
+  #      - gruvbox-dark
+  #
+  #   theme      = ""
+  # 
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Social icons
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  #
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/dsapab?_l=en_US"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/dsapab"
+
+  [[params.social]]
+    name = "gitlab"
+    url  = "https://gitlab.com/dsapab"
+
+  [[params.social]]
+    name = "X"
+    url  = "https://x.com/dsapab"
+
+  [[params.social]]
+    name = "lichess"
+    url  = "https://lichess.org/@/Dr_slimshady"
+
+
+[languages]
+  [languages.en]
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
+  [languages.en.params]
+    subtitle  = "Pablo's web corner"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "blog/"
+  [[menu.main]]
+    identifier = "tags"
+    name       = "Search"
+    url        = "categories/"
