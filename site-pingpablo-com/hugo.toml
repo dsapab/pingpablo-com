@@ -294,9 +294,9 @@ enableGitInfo   = true
     name = "X"
     url  = "https://x.com/dsapab"
 
-  [[params.social]]
-    name = "lichess"
-    url  = "https://lichess.org/@/Dr_slimshady"
+  #[[params.social]]
+  # name = "lichess"
+  # url  = "https://lichess.org/@/"
 
 
 [languages]
