@@ -50,6 +50,11 @@
             </div>
         </article>
         <hr />
+        <div class="social-icons">
+            {{ if $.Site.Params.enableSharingButtons }}
+                {{ partial "sharing-buttons.html" . }}
+            {{ end }}
+  		</div>
         <div class="post-info">
             {{ partial "tags.html" .Params.tags }}
             {{ partial "categories.html" . }}
