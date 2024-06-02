@@ -71,6 +71,9 @@ enableGitInfo   = true
 # Main params
 [params]
 
+  # Public URL - to be used in custom settings
+  mySitePublicUrl = "https://pingpablo.com"
+
   dateform        = "Jan 2, 2024"
   dateformShort   = "Jan 2"
   dateformNum     = "2024-01-02"
