@@ -35,10 +35,7 @@ enableGitInfo   = true
 
 
 ##################################################################
-# Author
-[author]
-  name = "pingpablo.com"
-  location = "Earth"
+# Author (moved to params.author below)
 
 
 ##################################################################
@@ -161,7 +158,7 @@ enableGitInfo   = true
   ##
   # Author
   [params.author]
-    name = "Pablo"
+    name = "pingpablo.com"
 
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
