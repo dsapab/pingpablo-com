@@ -28,6 +28,7 @@ tags:
 
 >This post will be brief. As you may have guessed already, I am not a web developer and I am far from having a refined taste for web design. Nevertheless, I try my best and I hope it does not look that bad!
 
+>**UPDATE 2026** - I finally fell for the *[Notion](https://www.notion.com)* trap. I started using it for advanced note taking, web article storage/archiving and book reading tracking. I fell in love with it and it did not make sense anymore to have yet another application for writing ony. Notion became my one-stop app for note-taking and writing, so I deprecated Quip and migrated all my content there.
 
 How to properly write in [markdown](https://en.wikipedia.org/wiki/Markdown)? 
 
