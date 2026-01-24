@@ -2,7 +2,7 @@
 author:
   name: "Pablo"
 date: 2026-01-24T00:00:00-00:00
-enableComments: false
+enableComments: true
 linktitle: The reading mechanics
 title: The reading mechanics
 cover: /media/blog/2026/01/24_the-reading-mechanics/mechanic-robot-reading.png
