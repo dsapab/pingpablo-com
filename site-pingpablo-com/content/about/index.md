@@ -12,9 +12,8 @@ I am passionate about Linux, Containers, InfoSec, electronics... and any tech st
 
 This is my space where I will share thoughts, news and projects about technology and computers in the [blog section](/blog). I collect all my useful snippets & tricks [here](https://github.com/dsapab/wizardly-snippets), suggestions are welcome!
 
+You can connect with me on [GitHub](https://github.com/dsapab)!
 
 ****
 
 ![Animated octopus](/favicon-octopus.png)
-
-You can connect with me on [GitHub](https://github.com/dsapab)!
