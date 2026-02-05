@@ -5,7 +5,7 @@ date: 2026-02-05T00:00:00-00:00
 enableComments: true
 linktitle: Paste this snippet!
 title: Paste this snippet!
-cover: /media/blog/2026/01/05_paste_this_snippet/storm-pirate.jpg
+cover: media/blog/2026/01/05_paste_this_snippet/storm-pirate.jpg
 coverAlt: Robot pirate steers ship through raging storm
 coverCaption: Robot pirate steers ship through raging storm
 type:
