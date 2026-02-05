@@ -15,7 +15,7 @@
                 <ul class="posts-list">
                     {{ range .Pages }}
                         <li class="post-item" style="padding-top: 24px;">
-                            <span class="post-title">{{ with .Params.cover }}{{ $img := resources.Get . }}{{ if $img }}{{ $thumb := $img.Resize "200x" }}<img src="{{ $thumb.RelPermalink }}" width="15%" height="15%" loading="lazy">{{ else }}<img src="{{ . }}" width="15%" height="15%" loading="lazy">{{ end }}{{ end }}</span>
+                            <span class="post-title">{{ with .Params.cover }}{{ $img := resources.Get . }}{{ if $img }}{{ $thumb := $img.Resize "200x" }}<img src="{{ $thumb.RelPermalink }}" width="15%" height="15%" loading="lazy" alt="thumb">{{ else }}<img src="{{ . }}" width="15%" height="15%" loading="lazy" alt="original">{{ end }}{{ end }}</span>
                             <a href="{{.Permalink}}" class="post-item-inner">
 
                                 <span class="post-title">{{.Title}}</span>
