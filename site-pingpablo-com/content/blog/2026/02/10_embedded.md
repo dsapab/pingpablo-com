@@ -6,7 +6,7 @@ enableComments: true
 draft: true
 linktitle: Embedded
 title: Embedded
-cover: /media/blog/2024/05/02_hello-friend/robot-poet.jpeg
+cover: media/blog/2024/05/02_hello-friend/robot-poet.jpeg
 coverAlt: Animated robot in a Baroque poets outfit
 coverCaption: Animated robot in a Baroque poets outfit
 type:
