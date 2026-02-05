@@ -5,7 +5,7 @@ date: 2024-06-02
 enableComments: true
 linktitle: I see containers everywhere
 title: I see containers everywhere
-cover: /media/blog/2024/06/02_i-see-containers-everywhere/containers.png
+cover: media/blog/2024/06/02_i-see-containers-everywhere/containers.png
 coverAlt: Containers, probably in a port
 coverCaption: Containers, probably in a port
 type:
