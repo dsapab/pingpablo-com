@@ -1,13 +1,13 @@
 ---
 author:
   name: "Pablo"
-date: 2026-02-04T00:00:00-00:00
+date: 2026-02-05T00:00:00-00:00
 enableComments: true
 linktitle: Paste this snippet!
 title: Paste this snippet!
-cover: /media/blog/2024/05/02_hello-friend/robot-poet.jpeg
-coverAlt: Animated robot in a Baroque poets outfit
-coverCaption: Animated robot in a Baroque poets outfit
+cover: /media/blog/2026/01/05_paste_this_snippet/storm-pirate.jpg
+coverAlt: Robot pirate steers ship through raging storm
+coverCaption: Robot pirate steers ship through raging storm
 type:
 - blog
 - blogs
