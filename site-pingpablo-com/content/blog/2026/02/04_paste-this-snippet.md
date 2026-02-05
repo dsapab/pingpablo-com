@@ -28,9 +28,9 @@ tags:
 
 Hello there!
 
-I am maintaining a collection of [code snippets](https://github.com/dsapab/wizardly-snippets/tree/main) that proved to be useful in many occasions. Even with the rase of AI agents.
+I maintain a collection of [code snippets](https://github.com/dsapab/wizardly-snippets/tree/main) that have proven useful on many occasions. Even with the rise of AI agents and coding assistants, it's always a good idea to have your own well-tested and reliable toolbox. These snippets can also be created with AI or used as template starting points for improving them with agents.
 
-It is being hosted on [GitHub pages](https://dsapab.github.io/wizardly-snippets/#license) as well. I am embedding it here so I can dynamically reference it and remains always up-to-date!
+The site is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) as well: https://dsapab.github.io/wizardly-snippets/#license. I'm embedding it here so it can be dynamically referenced and always remains up-to-date!
 
 P.
 
