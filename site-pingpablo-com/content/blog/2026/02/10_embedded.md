@@ -27,6 +27,8 @@ tags:
 - command
 ---
 
+Explain here my approach for the iFrame and how I implemented it. Reference the code from GitHub.
+
 - https://discourse.gohugo.io/t/parameter-wont-render/40809/4
 - https://github.com/dsapab/wizardly-snippets/blob/main/_includes/head-custom.html
 - https://github.com/dsapab/pingpablo-com/blob/dev/site-pingpablo-com/layouts/shortcodes/embedded-site.html
