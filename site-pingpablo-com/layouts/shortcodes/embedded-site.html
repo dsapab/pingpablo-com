@@ -9,9 +9,12 @@
 
 <script>
 window.addEventListener('message', function(e) {
-    if (e.data.height) {
-        const iframe = document.getElementById('embedded-{{ .Get "title" | urlize }}');
-        if (iframe) iframe.style.height = (e.data.height + 70) + 'px';
+    const iframe = document.getElementById('embedded-{{ .Get "title" | urlize }}');
+    if (!iframe) return;
+    if (e.data.height) iframe.style.height = (e.data.height + 70) + 'px';
+    if (e.data.scrollTo !== undefined) {
+        const iframeTop = iframe.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({top: iframeTop + e.data.scrollTo, behavior: 'smooth'});
     }
 });
 </script>
