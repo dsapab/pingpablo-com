@@ -1,7 +1,20 @@
-00. I keep a record of the used taxonomies here - (sort with: sort -o taxonomies.txt taxonomies.txt)
-- Announcements
-- Learning
-- Links
-- Opinion
-- Tooling
-- Writing
+# CATEGORIES REFERENCE
+
+## Purpose
+Manual tracking of Hugo category taxonomies used across blog posts.
+Maintains consistency and prevents typos when adding categories to post frontmatter.
+
+## Usage
+1. Check this list before adding categories to new posts
+2. Add new categories here when creating them
+3. Keep sorted: sort -o categories.txt categories.txt
+4. Use exact spelling in post frontmatter (case-sensitive)
+
+# VALID_CATEGORIES (machine-readable - do not change format)
+Announcements
+Learning
+Links
+Opinion
+Tooling
+Writing
+Coding

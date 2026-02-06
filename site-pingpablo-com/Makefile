@@ -14,7 +14,12 @@ endif
 
 ## 
 # Targets
-site:
+prechecks:
+	@echo -e "\nRunning prechecks..."
+	@./tools/check-categories.sh
+	@echo -e "[OK] - Prechecks passed\n"
+
+site: prechecks
 	@echo -e "\nBuilding site..."
 
 	@if [ -n "$${BASE_URL}" ]; then 					 \
@@ -32,7 +37,7 @@ site:
 
 	@echo -e "\n[OK] - Build completed successfully."
 
-test:
+test: prechecks
 	@echo -e "\n\nStarting test server..."
 	@hugo server --minify --watch
 	@echo -e "\n\nTest finished."
