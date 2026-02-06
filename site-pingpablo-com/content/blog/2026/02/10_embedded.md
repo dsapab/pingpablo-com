@@ -16,15 +16,13 @@ weight: 10
 aliases:
 - /blog/embedded
 categories:
-- Tool
-- Announcements
-- Code
+- Tooling
+- Coding
 tags:
 - snippets
-- bash
-- linux
-- docker
-- command
+- web
+- html
+- scripting
 ---
 
 Explain here my approach for the iFrame and how I implemented it. Reference the code from GitHub.

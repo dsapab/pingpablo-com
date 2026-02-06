@@ -15,9 +15,9 @@ weight: 10
 aliases:
 - /blog/paste-this-snippet
 categories:
-- Tool
+- Tooling
 - Announcements
-- Code
+- Coding
 tags:
 - snippets
 - bash
