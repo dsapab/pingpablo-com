@@ -1,3 +1,4 @@
+<!-- Hugo shortcode for embedding external sites in an iframe with dynamic height adjustment -->
 <iframe 
     id="embedded-{{ .Get "title" | urlize }}"
     title="{{ .Get "title" }}"
@@ -10,10 +11,16 @@
 ></iframe>
 
 <script>
+// Listen for postMessage events from the embedded iframe
 window.addEventListener('message', function(e) {
+    // Get the iframe element by its dynamic ID
     const iframe = document.getElementById('embedded-{{ .Get "title" | urlize }}');
     if (!iframe) return;
+    
+    // Adjust iframe height based on content (adds 70px padding)
     if (e.data.height) iframe.style.height = (e.data.height + 70) + 'px';
+    
+    // Scroll parent window to specific position within iframe
     if (e.data.scrollTo !== undefined) {
         const iframeTop = iframe.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({top: iframeTop + e.data.scrollTo, behavior: 'smooth'});
