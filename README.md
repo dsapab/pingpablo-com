@@ -1,4 +1,4 @@
-![Animated robot in a Baroque poets outfit in a classic study](./misc/robot-poet.jpeg)
+![Animated robot in a Baroque poets outfit in a classic study](./misc/robot-writer.jpeg)
 
 ## [pingpablo.com](https://pingpablo.com)
 
