@@ -11,6 +11,9 @@ else
 $(error "Did not find required AWS CLI executable!")
 endif
 
+## 
+# PHONY Targets - will always run
+.PHONY: prechecks site test clean
 
 ## 
 # Targets
