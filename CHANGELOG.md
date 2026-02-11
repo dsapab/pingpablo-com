@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026.02.11.20.00
+
+- Fix navigation header positioning issue when zooming out
+- Add custom CSS override to make header sticky across all pages
+- Remove inline styles from blog list template that interfered with header positioning
+
 ## 2026.02.11.17.53
 
 - Add GenAI context file for project documentation
