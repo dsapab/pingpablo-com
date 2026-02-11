@@ -5,7 +5,7 @@ date: 2024-05-31
 enableComments: true
 linktitle: Are you talking to me?
 title: Are you talking to me?
-cover: media/blog/2024/05/31_are_you_talking_to_me/message-bottle.png
+cover: media/blog/2024/05/31_are_you_talking_to_me/message-bottle.jpeg
 coverAlt: Message in a bottle
 coverCaption: Message in a bottle
 type:

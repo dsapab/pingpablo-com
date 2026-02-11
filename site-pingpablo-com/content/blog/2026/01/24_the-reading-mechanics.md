@@ -5,7 +5,7 @@ date: 2026-01-24T00:00:00-00:00
 enableComments: true
 linktitle: The reading mechanics
 title: The reading mechanics
-cover: media/blog/2026/01/24_the-reading-mechanics/mechanic-robot-reading.png
+cover: media/blog/2026/01/24_the-reading-mechanics/mechanic-robot-reading.jpeg
 coverAlt: Mechanic robot in a garage-style environment filled with books
 coverCaption: Mechanic robot in a garage-style environment filled with books
 type:
