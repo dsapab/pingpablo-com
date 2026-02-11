@@ -1,25 +1,26 @@
 ---
 author:
   name: "Pablo"
-date: <PLACEHOLDER>
+date: 2026-02-11
 enableComments: true
 draft: true
-linktitle: <PLACEHOLDER>
-title: <PLACEHOLDER>
-cover: <PLACEHOLDER>/sample.jpeg
-coverAlt: <TO-BE-COMPLETED>
-coverCaption: <TO-BE-COMPLETED>
+linktitle: Make it till you fake it
+title: make it till you fake it
+cover: /media/blog/2026/02/11_make-it-till-you-fake-it/2024-02-11_Make-article.jpg
+coverAlt: Rustic kitchen with nice viewings
+coverCaption: Rustic kitchen with nice viewings
 type:
 - blog
 - blogs
 weight: 10
 aliases:
-- /blog/<PLACEHOLDER>
+- /blog/make-it-till-you-fake-it
 categories:
-- <TO-BE-COMPLETED>
-- <TO-BE-COMPLETED>
+- Coding
+- Tooling
 tags:
-- <TO-BE-COMPLETED>
+- Linux
+- Make
 ---
 
 > Section 1 of the manual describes user commands and tools, for

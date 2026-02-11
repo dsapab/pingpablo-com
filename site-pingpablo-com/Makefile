@@ -13,7 +13,7 @@ endif
 
 ## 
 # PHONY Targets - will always run
-.PHONY: prechecks site test clean
+.PHONY: prechecks site test clean newpost
 
 ## 
 # Targets
@@ -51,6 +51,10 @@ clean:
 	@rm -rf ./resources
 	@hugo mod clean --all
 	@echo "\n[OK] - Clean completed!"
+
+newpost:
+	@./tools/new-blog-post.sh
+	@echo -e "\n[OK] - New post entry created!"
 
 all: site
 	@echo -e "\n[OK] - Build completed!"
