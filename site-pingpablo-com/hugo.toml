@@ -131,7 +131,8 @@ enableGitInfo   = true
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
-  customCSS = ["css/fix-header.css", "css/pagefind-custom.css"]
+  # NOTE - Paths should be absolute (/...), so I can pick them for the /css directory.
+  customCSS = ["/css/fix-header.css", "/css/pagefind-custom.css"]
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
