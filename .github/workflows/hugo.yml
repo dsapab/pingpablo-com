@@ -28,32 +28,19 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install jq
 
-      # Install the latest version for Hugo CLI
-      - name: Install Hugo CLI
-        env:
-          # We are manually pointing to a specific version of HUGO.
-          # I want to have control over the versions and do not experience
-          #   breaking changes and deprecations. I want to manually decide
-          #   when to upgrade.
-          HUGO_VERSION: "v0.154.5"
-        run: |
-          cd ${{ runner.temp }}          
-          curl -s --silent -N "https://api.github.com/repos/gohugoio/hugo/releases/tags/$HUGO_VERSION" | jq '.assets[] | select(.name | contains("hugo_extended_") and contains("_linux-amd64.deb") and (contains("withdeploy") | not ))' | jq .browser_download_url | xargs wget -qO- > hugo.deb
-          curl -s --silent -N "https://api.github.com/repos/gohugoio/hugo/releases/tags/$HUGO_VERSION" | jq '.assets[] | select(.name | contains("_checksums.txt"))' | jq .browser_download_url | xargs wget -qO- > checksums.txt
-          if ! grep $(sha256sum hugo.deb | awk '{print $1}') checksums.txt
-          then
-            echo "Checksum does not match! Aborting..."
-            exit 1
-          fi
-          sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      
-      # Checkout sub-modules (in case present)
+      # Checkout sub-modules (in case present)
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
-      # Build site for production
+      # Install the latest version for Hugo CLI
+      - name: Install Hugo CLI
+        run: |
+          cd site-pingpablo-com/
+          make install
+
+      # Build site for production
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -74,9 +61,9 @@ jobs:
           cd site-pingpablo-com/
           pwd && ls -lah
           echo "Building site - $BASE_URL"
-          make site
+          make build
 
-      # Deploy!
+      # Deploy!
       - name: Deploy artifact
         env:
           BRANCH: ${{github.ref}}

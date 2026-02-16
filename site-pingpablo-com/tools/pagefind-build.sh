@@ -23,7 +23,9 @@ fi
 
 source "$VENV_DIR/bin/activate"
 
-if ! pip show pagefind &> /dev/null || ! pip show pagefind | grep -q "Version: $PAGEFIND_VERSION"; then
+INSTALLED_VERSION=$(pip show pagefind 2>/dev/null | grep "^Version:" | awk '{print $2}' || echo "")
+
+if [ "$INSTALLED_VERSION" != "$PAGEFIND_VERSION" ]; then
   pip install "pagefind[bin]==$PAGEFIND_VERSION"
 fi
 
