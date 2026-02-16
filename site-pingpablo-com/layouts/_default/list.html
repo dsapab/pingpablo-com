@@ -2,6 +2,18 @@
     {{ $paginator := .Paginate .Data.Pages }}
     
     <main class="posts">
+
+        {{ if eq .RelPermalink "/categories/" }}
+            <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+            <script src="/pagefind/pagefind-ui.js"></script>
+            <div id="search"></div>
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    new PagefindUI({ element: "#search", showSubResults: true });
+                });
+            </script>
+        {{ end }}
+
         <h1>{{ .Title }}</h1>
 
         {{ if .Content }}
