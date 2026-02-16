@@ -23,9 +23,9 @@ tags:
 - Make
 ---
 
-> Section 1 of the manual describes user commands and tools, for
->       example, file manipulation tools, shells, compilers, web
->       browsers, file and image viewers and editors, and so on.
+> The purpose of the make utility is to determine automatically which
+> pieces of a large program need to be recompiled, and issue the commands
+> to  recompile  them.
 
 ## Important intro
 
