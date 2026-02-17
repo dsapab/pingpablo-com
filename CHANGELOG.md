@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026.02.17.00.28
+
+- Implementing simple [Pagefind](https://github.com/pagefind/pagefind) search
+- Add Pagefind custom CSS with theme-aware styling
+- Configure Pagefind UI variables for light and dark themes using [data-theme] selector
+- Customize search UI colors, borders, and styling to match site design
+
 ## 2026.02.11.20.00
 
 - Fix navigation header positioning issue when zooming out
