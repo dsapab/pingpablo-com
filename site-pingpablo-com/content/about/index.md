@@ -19,3 +19,7 @@ Connect with me on [GitHub](https://github.com/dsapab)!
 ****
 
 ![Animated octopus](/favicon-octopus.png)
+
+****
+
+This is a personal blog sharing my own opinions and experiences with technology. All content is provided for informational purposes only without warranties. Content is licensed under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) unless otherwise stated. For full details, see the [Terms](/terms) page.
