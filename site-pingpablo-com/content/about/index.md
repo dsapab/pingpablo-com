@@ -15,7 +15,7 @@ I specialize in Cloud Infrastructure, DevOps, container orchestration, and secur
 
 This is my space to share thoughts, news, and projects about technology and computing in the [blog section](/blog). I collect useful snippets and tricks [here](blog/2026/02/04_paste-this-snippet/). Suggestions are welcome!
 
-Connect with me on [GitHub](https://github.com/dsapab)!
+Connect with me on [LinkedIn](https://www.linkedin.com/in/dsapab)!
 
 ****
 
