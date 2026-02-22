@@ -1,6 +1,7 @@
 ---
 title : "Terms"
 date : "2024-05-02"
+enableSharingButtons: false
 aliases:
   - /terms
   - /tyc

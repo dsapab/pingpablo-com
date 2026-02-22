@@ -1,6 +1,7 @@
 ---
 title : "About"
 date : "2024-05-02"
+enableSharingButtons: false
 aliases:
   - /about
   - /contact

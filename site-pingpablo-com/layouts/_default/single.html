@@ -55,8 +55,10 @@
         </article>
         <hr />
         <div class="social-icons">
-            {{ if $.Site.Params.enableSharingButtons }}
-                {{ partial "sharing-buttons.html" . }}
+            {{ if ne .Params.enableSharingButtons false }}
+                {{ if $.Site.Params.enableSharingButtons }}
+                    {{ partial "sharing-buttons.html" . }}
+                {{ end }}
             {{ end }}
   		</div>
         <div class="post-info">
