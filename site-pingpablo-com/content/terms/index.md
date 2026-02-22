@@ -8,7 +8,7 @@ author:
   name: "Pablo"
 ---
 
-The information provided on [pingpablo.com](pingpablo.com) is for general informational purposes only. All information is provided in good faith, however I make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site. Under no circumstance shall I have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided. Your use of the site and reliance on any information is solely at your own risk.
+The content provided on [pingpablo.com](pingpablo.com) is for general informational purposes only. All material is provided in good faith, however I make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site. I assume no liability for any loss or damage resulting from use of this site. Your use of the site and reliance on any information is solely at your own risk.
 
 ## NATURE OF THIS SITE
 
