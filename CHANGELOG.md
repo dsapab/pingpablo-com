@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026.02.18.00.00
+
+- Bump Hugo version to v0.156.0
+- Edit contact page functionality
+- Add better control for sharing buttons (enable/disable)
+- Add dedicated TyC page
+
 ## 2026.02.17.00.28
 
 - Implementing simple [Pagefind](https://github.com/pagefind/pagefind) search
