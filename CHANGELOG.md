@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026.08.13.00.44
+
+- Add Bastion post covering the ec2-spot-bastion CloudFormation setup, SSM access, and SSH over SSM
+
 ## 2026.02.18.00.00
 
 - Bump Hugo version to v0.156.0
