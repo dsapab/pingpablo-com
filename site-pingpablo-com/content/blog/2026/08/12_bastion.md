@@ -39,7 +39,7 @@ You don't need to treat it just as a jump box. With a persistent volume and a de
 
 My favourite part is how you get in. Every instance runs the SSM agent with the `AmazonSSMManagedInstanceCore` role, so Session Manager drops you into a shell using nothing but IAM. You don't need a key or a public IP, and you never open a port. When I want a proper SSH session I tunnel it over SSM with `AWS-StartSSHSession`, and even then the security group stays empty. Setting that up requires a `ProxyCommand` block in your `~/.ssh/config` and the Session Manager plugin installed locally:
 
-```sshconfig
+```text
 # SSH over Session Manager
 Host i-* mi-*
     ProxyCommand sh -c "aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
