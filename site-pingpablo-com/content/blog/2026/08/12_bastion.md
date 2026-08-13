@@ -37,7 +37,7 @@ It runs on EC2 Spot with lowest-price allocation, so it stays cheap, and a size-
 
 You don't need to treat it just as a jump box. With a persistent volume and a decent instance type it also makes a fine remote work machine. Run day-to-day shell work, ML and AI jobs, etc. You can scale up to a compute or memory-heavy instance when a job actually needs it, and drop back down after. Pick the right machine by checking the [EC2 instance types](https://aws.amazon.com/ec2/instance-types/) and [pricing](https://aws.amazon.com/ec2/pricing/) references.
 
-My favourite bit is how you get in. Every instance runs the SSM agent with the `AmazonSSMManagedInstanceCore` role, so Session Manager drops you into a shell using nothing but IAM. You don't need a key or a public IP, and you never open a port. When I want a proper SSH session I tunnel it over SSM with `AWS-StartSSHSession`, and even then the security group stays empty. Setting that up requires a `ProxyCommand` block in your `~/.ssh/config` and the Session Manager plugin installed locally:
+My favourite part is how you get in. Every instance runs the SSM agent with the `AmazonSSMManagedInstanceCore` role, so Session Manager drops you into a shell using nothing but IAM. You don't need a key or a public IP, and you never open a port. When I want a proper SSH session I tunnel it over SSM with `AWS-StartSSHSession`, and even then the security group stays empty. Setting that up requires a `ProxyCommand` block in your `~/.ssh/config` and the Session Manager plugin installed locally:
 
 ```sshconfig
 # SSH over Session Manager
