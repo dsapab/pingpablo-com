@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026.08.24.23.20
+
+- Add "Find your terminal" post on running a framework-free zsh setup and the supply-chain/attack-surface tradeoffs of frameworks
+
 ## 2026.08.13.00.44
 
 - Add Bastion post covering the ec2-spot-bastion CloudFormation setup, SSM access, and SSH over SSM
