@@ -12,6 +12,7 @@ Maintains consistency and prevents typos when adding categories to post frontmat
 
 # VALID_CATEGORIES (machine-readable - do not change format)
 Announcements
+AWS
 Learning
 Links
 Linux
